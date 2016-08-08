@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="DiagnosticCenterBillManagementSystem.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/Style.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.1.0.js"></script>
+    <script src="Scripts/jquery.validate.js"></script>
+    <script src="JS/jspdf.min.js"></script>
+    <script src="JS/basic.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="page-header overflowHiden">
+            <div class="logo">
+              <a href="../UI/Default.aspx"><img src="../CSS/logo2014.png" style="width: 100px; height: 40px;border: 1px solid #000000; border-radius: 5px;padding: 5px;"/></a>
+            </div>
+            <div class="slogun">
+                <p>Diagnosis Center Billing System.</p>
+            </div>
+        </div>
+        <div class="main_content overflowHiden">
+            <div class="side_bar overflowHiden ">
+            <ul>
+                <li><a href="../UI/TestTypeSetupUI.aspx">Test Type Setup</a></li>
+                <li><a href="../UI/TestSetupUI.aspx">Test Setup</a></li>
+                <li><a href="../UI/TestRequestEntryUI.aspx">Test Request Entry</a></li>
+                <li><a href="../UI/PaymentUi.aspx">Payment</a></li>
+                <li><a href="../UI/TestWiesReportUI.aspx">Test Wise Report</a></li>
+                <li><a href="../UI/TypeWiesReportUI.aspx">Type Wise Report</a></li>
+                <li><a href="../UI/UnpaidBillReportUI.aspx">Unpaid Bill Report</a></li>
+            </ul>
+                </div>
+            <%--<div class="side_bar overflowHiden ">
+                <div class="rmRootGroup rmVertical">
+                <asp:HyperLink class="rmItem rmFirst" ID="testTypeSetupHyperLink" NavigateUrl="~/UI/TestTypeSetupUI.aspx" runat="server">Test type Setup</asp:HyperLink><br />
+                <asp:HyperLink class="rmItem rmFirst" ID="testSetupHyperLink" NavigateUrl="~/UI/TestSetupUI.aspx" runat="server">Test Setup</asp:HyperLink><br />
+                <asp:HyperLink class="rmItem rmFirst" ID="testRequestEntryUIHyperLink" NavigateUrl="~/UI/TestRequestEntryUI.aspx" runat="server">Test Request Entry</asp:HyperLink><br />
+                <asp:HyperLink class="rmItem rmFirst" ID="paymentHyperLink" NavigateUrl="~/UI/PaymentUi.aspx" runat="server">Payment</asp:HyperLink><br />
+                <asp:HyperLink  class="rmItem rmFirst" ID="testwiesReporHyperLink" NavigateUrl="~/UI/TestWiesReportUI.aspx" runat="server">Test wies Report</asp:HyperLink><br />
+                <asp:HyperLink class="rmItem rmFirst" ID="typeWiesReportHyperLink" NavigateUrl="~/UI/TypeWiesReportUI.aspx" runat="server">Type wies Report</asp:HyperLink><br />
+                <asp:HyperLink class="rmItem rmFirst" ID="unpaidBillReportHyperLink" NavigateUrl="~/UI/UnpaidBillReportUI.aspx" runat="server">Unpaid bill Report</asp:HyperLink><br />
+            </div>
+                </div>--%>
+            <div class="container overflowHiden">
+                <asp:ContentPlaceHolder ID="MainContentContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="footer overflowHiden">
+            <strong>Copyright &copy; 2016</strong> All rights reserved by <a href="#">Sniper56</a> 
+        </div>
+    </form>
+    <script src="../JS/jspdf.min.js"></script>
+</body>
+</html>
