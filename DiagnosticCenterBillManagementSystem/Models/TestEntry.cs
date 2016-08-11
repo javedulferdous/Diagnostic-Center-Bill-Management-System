@@ -15,5 +15,6 @@ namespace DiagnosticCenterBillManagementSystem.Models
         public string BillNo { get; set; }
         public decimal TotalAmount { get; set; }
         public DateTime DueDate { get; set; }
+        public Decimal UnitePrice {get;set;}
     }
 }
